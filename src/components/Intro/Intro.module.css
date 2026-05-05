@@ -1,0 +1,22 @@
+.intro {
+}
+
+.heading {
+  font-weight: 400;
+  font-size: 3rem;
+}
+
+.desc {
+  font-size: 1.9rem;
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+  color: var(--link-dark);
+}
+
+.link:hover,
+.link:active {
+  color: var(--link-vivid);
+}

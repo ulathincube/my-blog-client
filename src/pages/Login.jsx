@@ -2,6 +2,8 @@ import { loginUser } from "../services/user"
 import { useMutation } from "@tanstack/react-query"
 import { useState } from "react"
 import useToken from "../hooks/useToken"
+import Footer from "../components/Footer/Footer"
+import Header from "../components/Header/Header"
 
 function Login() {
   const [email, setEmail] = useState("")
@@ -31,33 +33,37 @@ function Login() {
   console.log(token && token)
 
   return (
-    <section>
-      <form onSubmit={onFormSubmit}>
-        <div>
-          <label htmlFor="email">Email Address</label>
-          <input
-            type="email"
-            name="email"
-            id="email"
-            value={email}
-            onChange={onEmailChange}
-          />
-        </div>
-        <div>
-          <label htmlFor="password">Password</label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            value={password}
-            onChange={onPasswordChange}
-          />
-        </div>
-        <div>
-          <button type="submit">Log In</button>
-        </div>
-      </form>
-    </section>
+    <>
+      <Header />
+      <section>
+        <form onSubmit={onFormSubmit}>
+          <div>
+            <label htmlFor="email">Email Address</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              value={email}
+              onChange={onEmailChange}
+            />
+          </div>
+          <div>
+            <label htmlFor="password">Password</label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              value={password}
+              onChange={onPasswordChange}
+            />
+          </div>
+          <div>
+            <button type="submit">Log In</button>
+          </div>
+        </form>
+      </section>
+      <Footer />
+    </>
   )
 }
 

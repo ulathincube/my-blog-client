@@ -1,14 +1,13 @@
-import useToken from "../hooks/useToken"
+import Header from "../components/Header/Header"
+import Intro from "../components/Intro/Intro"
+import Footer from "../components/Footer/Footer"
 
 function Home() {
-  const [, onChangeToken] = useToken()
-
-  const logOutHandler = () => onChangeToken(null)
-
   return (
     <>
-      <h1>Hey there!</h1>
-      <button onClick={logOutHandler}>Log Out</button>
+      <Header />
+      <Intro />
+      <Footer />
     </>
   )
 }

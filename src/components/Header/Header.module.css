@@ -1,0 +1,40 @@
+.header {
+  justify-self: flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+  min-width: 100%;
+  padding-top: 2rem;
+}
+
+.logo {
+  font-weight: 500;
+  font-size: 3.5rem;
+}
+
+.nav {
+  margin-left: auto;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.link:link,
+.link:visited {
+  text-decoration: none;
+  color: var(--link-dark);
+  border: none;
+  background-color: transparent;
+  outline: none;
+  padding: 0;
+}
+
+.link:hover,
+.link:active {
+  color: var(--link-vivid);
+}

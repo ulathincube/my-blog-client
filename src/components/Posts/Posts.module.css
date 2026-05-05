@@ -1,0 +1,11 @@
+.posts {
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+}
+
+.heading {
+  font-weight: 400;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}

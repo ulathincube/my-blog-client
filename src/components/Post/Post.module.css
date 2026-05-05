@@ -1,0 +1,19 @@
+.post {
+  border: 0.1rem solid black;
+  padding: 1rem;
+  list-style: none;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 1.9rem;
+}
+
+.body {
+  font-size: 1.6rem;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}

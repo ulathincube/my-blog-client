@@ -1,6 +1,8 @@
 import { useMutation } from "@tanstack/react-query"
 import { useState } from "react"
 import { registerUser } from "../services/user"
+import Footer from "../components/Footer/Footer"
+import Header from "../components/Header/Header"
 
 function Register() {
   const [name, setName] = useState("")
@@ -29,31 +31,35 @@ function Register() {
   }
 
   return (
-    <form onSubmit={onFormSubmit}>
-      <div>
-        <label htmlFor="name">Name</label>
-        <input type="text" name="name" value={name} onChange={onNameChange} />
-      </div>
-      <div>
-        <label htmlFor="email">Email Address</label>
-        <input
-          type="email"
-          name="email"
-          value={email}
-          onChange={onEmailChange}
-        />
-      </div>
-      <div>
-        <label htmlFor="password">Password</label>
-        <input
-          type="password"
-          name="password"
-          value={password}
-          onChange={onPasswordChange}
-        />
-      </div>
-      <button type="submit">Register</button>
-    </form>
+    <>
+      <Header />
+      <form onSubmit={onFormSubmit}>
+        <div>
+          <label htmlFor="name">Name</label>
+          <input type="text" name="name" value={name} onChange={onNameChange} />
+        </div>
+        <div>
+          <label htmlFor="email">Email Address</label>
+          <input
+            type="email"
+            name="email"
+            value={email}
+            onChange={onEmailChange}
+          />
+        </div>
+        <div>
+          <label htmlFor="password">Password</label>
+          <input
+            type="password"
+            name="password"
+            value={password}
+            onChange={onPasswordChange}
+          />
+        </div>
+        <button type="submit">Register</button>
+      </form>
+      <Footer />
+    </>
   )
 }
 

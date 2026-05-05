@@ -1,7 +1,9 @@
 import { useParams } from "react-router"
 import { useQuery } from "@tanstack/react-query"
 import { getSinglePost } from "../services/posts"
-import SinglePost from "../components/SinglePost"
+import SinglePost from "../components/SinglePost/SinglePost"
+import Header from "../components/Header/Header"
+import Footer from "../components/Footer/Footer"
 
 function BlogPost() {
   const { postId } = useParams()
@@ -21,7 +23,9 @@ function BlogPost() {
 
   return (
     <>
+      <Header />
       <SinglePost post={post} />
+      <Footer />
     </>
   )
 }
