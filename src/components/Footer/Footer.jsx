@@ -4,7 +4,9 @@ import { Link } from "react-router"
 function Footer() {
   return (
     <footer className={styles.footer}>
-      <div className={styles.logo}>Ulathi</div>
+      <Link to="/" className={styles.home}>
+        <div className={styles.logo}>Ulathi</div>
+      </Link>
       <nav className={styles.nav}>
         <ul className={styles.list}>
           <li>

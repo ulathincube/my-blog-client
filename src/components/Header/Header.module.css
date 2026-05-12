@@ -8,6 +8,12 @@
   padding-top: 2rem;
 }
 
+.home:link,
+.home:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
 .logo {
   font-weight: 500;
   font-size: 3.5rem;

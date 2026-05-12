@@ -1,11 +1,15 @@
 :root {
-  --background-color: hsl(220deg 5% 99%);
+  --background-color: hsl(220deg 25% 95%);
+  --background-alt: hsl(220deg 25% 90%);
   --text-dark: hsl(220deg 20% 10%);
-  --text-light: hsl(220deg 10% 50%);
+  --text-darker: hsl(220deg 90% 5%);
+  --text-dark-light: hsl(220deg 10% 40%);
+  --text-light: hsl(220deg 5% 99%);
   --button-color: hsl(35deg 100% 40%);
   --button-text: hsl(35deg 10% 99%);
   --link-dark: hsl(220deg 50% 50%);
   --link-vivid: hsl(230deg 70% 50%);
+  --link-dark-disabled: hsl(220deg 50% 50% / 0.15);
 }
 
 /* 1. Use a more-intuitive box-sizing model */
@@ -94,6 +98,7 @@ h6 {
 }
 
 #root {
+  padding: 0 2rem;
   display: flex;
   flex-direction: column;
   max-width: 120rem;

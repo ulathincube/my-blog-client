@@ -4,7 +4,9 @@ import { Link } from "react-router"
 function Header() {
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>Ulathi</div>
+      <Link className={styles.home} to="/">
+        <div className={styles.logo}>Ulathi</div>
+      </Link>
       <nav className={styles.nav}>
         <ul className={styles.list}>
           <li>

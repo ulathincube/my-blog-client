@@ -10,6 +10,12 @@
   font-size: 1.9rem;
 }
 
+.name {
+  font-weight: 600;
+  font-style: italic;
+  color: var(--text-darker);
+}
+
 .link:link,
 .link:visited {
   text-decoration: none;
@@ -19,4 +25,15 @@
 .link:hover,
 .link:active {
   color: var(--link-vivid);
+}
+
+@media (max-width: 37.5em) {
+  .heading {
+    font-size: 2.7rem;
+  }
+
+  .desc,
+  .link {
+    font-size: 1.8rem;
+  }
 }

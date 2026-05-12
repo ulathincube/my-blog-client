@@ -9,6 +9,12 @@
   margin-top: auto;
 }
 
+.home:link,
+.home:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
 .logo {
   font-weight: 500;
   font-size: 3.5rem;
@@ -25,11 +31,17 @@
   list-style: none;
 }
 
-.link {
+.link:link,
+.link:visited {
   text-decoration: none;
-  color: purple;
+  color: var(--link-dark);
   border: none;
   background-color: transparent;
   outline: none;
   padding: 0;
+}
+
+.link:hover,
+.link:active {
+  color: var(--link-vivid);
 }

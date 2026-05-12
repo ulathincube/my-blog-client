@@ -1,11 +1,29 @@
 .posts {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
   flex-direction: column;
+  margin-bottom: 2rem;
 }
 
 .heading {
-  font-weight: 400;
-  font-size: 2.5rem;
+  font-weight: 600;
+  font-size: 3.5rem;
   margin-bottom: 1.5rem;
+}
+
+.controls {
+  display: flex;
+  gap: 1rem;
+}
+
+.action {
+  border: none;
+  padding: 1rem 3rem;
+  border-radius: 2.5px;
+  background-color: var(--link-dark);
+  color: var(--text-light);
+}
+
+.action:disabled {
+  background-color: var(--link-dark-disabled);
 }
