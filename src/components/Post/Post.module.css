@@ -1,18 +1,20 @@
 .post {
   list-style: none;
-  color: var(--text-light);
 }
 
 .title {
   font-weight: 600;
-  font-size: 2.2rem;
+  font-size: 1.4rem;
+  font-weight: var(--font-weight-bold);
 }
 
 .body {
-  font-size: 1.6rem;
+  font-size: inherit;
 }
 
 .link {
   text-decoration: none;
-  color: var(--text-dark);
+  color: inherit;
+  display: flex;
+  flex-direction: column;
 }

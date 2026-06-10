@@ -5,11 +5,7 @@
   max-width: 100vw;
   align-items: center;
   justify-content: center;
-  animation: 1000ms linear 0ms infinite normal both loading;
-}
-
-.icon {
-  font-size: 5rem;
+  animation: loading 1000ms linear infinite both;
 }
 
 @keyframes loading {
@@ -21,8 +17,4 @@
     opacity: 1;
     transform: rotate(1turn);
   }
-}
-
-.heading {
-  font-size: 3rem;
 }

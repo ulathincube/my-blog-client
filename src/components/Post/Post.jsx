@@ -6,7 +6,7 @@ function Post({ title, body, id }) {
   return (
     <li className={styles.post}>
       <Link className={styles.link} to={`/blog/${id}`}>
-        <h3 className={styles.title}>{title}</h3>
+        <span className={styles.title}>{title}</span>
         <p className={styles.body}>{firstLineParagraph}</p>
       </Link>
     </li>

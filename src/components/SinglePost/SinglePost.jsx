@@ -6,7 +6,7 @@ function SinglePost({ post }) {
   return (
     <section className={styles.post}>
       <article className={styles.details}>
-        <h1 className={styles.title}>{post.title}</h1>
+        <span className={styles.title}>{post.title}</span>
         <figure className={styles.profile}>
           <div className={styles.avatar}>
             {/* <img src="./" className={styles.img} /> */}

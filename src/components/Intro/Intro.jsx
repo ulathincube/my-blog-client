@@ -8,9 +8,11 @@ function Intro() {
         Hi, My name is <strong className={styles.name}>Ulathi W Ncube</strong>
       </h1>
       <p className={styles.desc}>I'm a fullstack web developer</p>
-      <Link className={styles.link} to="/blog">
-        Learn more about me
-      </Link>
+      <div className={styles.sublink}>
+        <Link className={styles.link} to="/blog">
+          Learn More
+        </Link>
+      </div>
     </section>
   )
 }

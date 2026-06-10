@@ -1,25 +1,42 @@
 .intro {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .heading {
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 1.6rem;
+  overflow-wrap: break-word;
+  display: inline;
 }
 
 .desc {
-  font-size: 1.9rem;
+  font-size: inherit;
+  font-size: 1.3rem;
 }
 
 .name {
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
   font-style: italic;
-  color: var(--text-darker);
+  color: var(--highlight-color);
+}
+
+.link {
+  font-size: 1.3rem;
+  transition: color 250ms ease-in;
+  text-decoration: none;
+  border-bottom: 2px solid currentColor;
+  padding-bottom: 4px;
 }
 
 .link:link,
 .link:visited {
-  text-decoration: none;
   color: var(--link-dark);
+}
+
+.link:hover {
+  transition: color 500ms ease-out;
 }
 
 .link:hover,
@@ -28,12 +45,4 @@
 }
 
 @media (max-width: 37.5em) {
-  .heading {
-    font-size: 2.7rem;
-  }
-
-  .desc,
-  .link {
-    font-size: 1.8rem;
-  }
 }

@@ -3,9 +3,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 5rem;
+  margin-bottom: 120px;
   min-width: 100%;
-  padding-top: 2rem;
+  padding-top: 30px;
 }
 
 .home:link,
@@ -16,7 +16,7 @@
 
 .logo {
   font-weight: 500;
-  font-size: 3.5rem;
+  font-size: 1.5rem;
 }
 
 .nav {
@@ -26,7 +26,7 @@
 .list {
   display: flex;
   align-items: center;
-  gap: 1.5rem;
+  gap: 10px;
   list-style: none;
 }
 
