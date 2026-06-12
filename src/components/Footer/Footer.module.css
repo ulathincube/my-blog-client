@@ -2,7 +2,7 @@
   justify-self: flex-start;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: baseline;
   padding-bottom: 30px;
   min-width: 100%;
 

@@ -45,4 +45,7 @@
 }
 
 @media (max-width: 37.5em) {
+  .intro {
+    gap: 15px;
+  }
 }

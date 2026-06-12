@@ -1,4 +1,6 @@
 import styles from "./SinglePost.module.css"
+import useToken from "../../hooks/useToken"
+import Comments from "../Comments/Comments"
 
 function SinglePost({ post }) {
   const linesOfText = post.body.split("\n\n")
@@ -22,6 +24,7 @@ function SinglePost({ post }) {
           </p>
         ))}
       </article>
+      <Comments comments={post.comments} />
     </section>
   )
 }

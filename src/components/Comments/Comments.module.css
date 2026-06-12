@@ -1,0 +1,45 @@
+.comments {
+  max-width: 55ch;
+}
+
+.comments-list {
+  list-style: none;
+}
+
+.heading {
+  font-weight: var(--font-weight-normal);
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.create-comment {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comment {
+}
+
+.comment-box {
+  resize: none;
+  width: 100%;
+  border-radius: 2.5px;
+  height: 100px;
+  border: 1px solid black;
+}
+
+.name {
+  font-weight: var(--font-weight-normal);
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--link-vivid);
+}
+
+.action {
+  background-color: var(--link-vivid);
+  color: var(--button-text);
+  padding: 10px 20px;
+  border: none;
+  font-size: 1rem;
+}
